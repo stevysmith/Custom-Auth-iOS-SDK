@@ -78,7 +78,7 @@ public class SmartAccount {
     public func signTypedData(typedData: Shared.TypedData) async throws -> String {
         try requireInit()
 
-        return String(bytes: try await inner!.signTypedData(typedData: typedData))
+        return String(bytes: try await inner!.signTypedData(typedData))
     }
 
     public func simulateTransaction(transaction: Shared.Transaction,options:SimulateTransactionOptions?) async throws -> SimulateResult {
